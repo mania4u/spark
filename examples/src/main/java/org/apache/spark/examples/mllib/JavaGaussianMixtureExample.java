@@ -59,7 +59,7 @@ public class JavaGaussianMixtureExample {
     // Save and load GaussianMixtureModel
     gmm.save(jsc.sc(), "target/org/apache/spark/JavaGaussianMixtureExample/GaussianMixtureModel");
     GaussianMixtureModel sameModel = GaussianMixtureModel.load(jsc.sc(),
-      "target/org.apache.spark.JavaGaussianMixtureExample/GaussianMixtureModel");
+      "target/or/apache/spark/JavaGaussianMixtureExample/GaussianMixtureModel");
 
     // Output the parameters of the mixture model
     for (int j = 0; j < gmm.k(); j++) {
